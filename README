@@ -13,7 +13,7 @@ Evaluate how different models interpret social behavior by assessing whether the
 We use ChatGPT as a baseline because it performs Natural Language Inference (NLI) through general reasoning and world knowledge, rather than relying solely on learned classification patterns. This makes it a useful reference point for context-aware judgment.
 
 #### Design
-
+```
 ChatGPT is prompted to act as a strict classifier with constrained output:
 You are a social acceptability classifier.
 
@@ -25,7 +25,7 @@ context-dependent
 
 Do not use cultural context unless it is explicitly included in the situation.
 Return only JSON in this format: {"label": "..."}
-
+```
 
 #### Rationale
 
