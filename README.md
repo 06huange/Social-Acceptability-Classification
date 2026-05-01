@@ -12,9 +12,12 @@ Evaluate how different models interpret social behavior by assessing whether the
 
 We use ChatGPT as a baseline because it performs Natural Language Inference (NLI) through general reasoning and world knowledge, rather than relying solely on learned classification patterns. This makes it a useful reference point for context-aware judgment.
 
+Model: gpt-4o-mini
+Provider: openai
+
 #### Design
-```
 ChatGPT is prompted to act as a strict classifier with constrained output:
+```
 You are a social acceptability classifier.
 
 Classify the user's situation into exactly one label:
@@ -38,6 +41,9 @@ Return only JSON in this format: {"label": "..."}
 ### 2. DeBERTa (2-Class + Threshold)
 
 We use DeBERTa as a baseline because it is explicitly trained for Natural Language Inference (NLI), particularly on datasets like MNLI. It models entailment as a classification problem over sentence pairs.
+
+Model: deberta-large-mnli
+Provider: huggingface
 
 #### Design
 
