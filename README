@@ -1,0 +1,84 @@
+# Cultural Adaptability Evaluation Project
+
+## Objective
+
+Evaluate how different models interpret social behavior by assessing whether their judgments remain consistent or adapt appropriately across culturally ambiguous situations.
+
+---
+
+## Baselines
+
+### 1. ChatGPT
+
+We use ChatGPT as a baseline because it performs Natural Language Inference (NLI) through general reasoning and world knowledge, rather than relying solely on learned classification patterns. This makes it a useful reference point for context-aware judgment.
+
+#### Design
+
+ChatGPT is prompted to act as a strict classifier with constrained output:
+You are a social acceptability classifier.
+
+Classify the user's situation into exactly one label:
+
+acceptable
+not acceptable
+context-dependent
+
+Do not use cultural context unless it is explicitly included in the situation.
+Return only JSON in this format: {"label": "..."}
+
+
+#### Rationale
+
+- Leverages reasoning learned during large-scale pretraining and alignment (RLHF)
+- Capable of handling ambiguity and nuanced scenarios
+- Serves as a reasoning-based baseline rather than a purely statistical classifier
+
+---
+
+### 2. DeBERTa (2-Class + Threshold)
+
+We use DeBERTa as a baseline because it is explicitly trained for Natural Language Inference (NLI), particularly on datasets like MNLI. It models entailment as a classification problem over sentence pairs.
+
+#### Design
+
+We adapt DeBERTa into a 3-label classifier using a confidence threshold:
+
+- Step 1: Predict between  
+  - acceptable  
+  - not acceptable  
+
+- Step 2: If the top prediction confidence < 0.65, assign:  
+  - context-dependent  
+
+This allows the model to approximate uncertainty without retraining.
+
+#### Formulation
+
+- Premise: `{Interaction}`
+- Hypothesis: "This behavior is {}"
+
+
+The model evaluates entailment between the situation and each hypothesis label.
+
+#### Rationale
+
+- Strong performance on structured NLI benchmarks
+- Produces stable and relatively calibrated probabilities
+- Acts as a pattern-recognition baseline, in contrast to ChatGPT’s reasoning-based approach
+
+#### Limitations
+
+- Trained on general-domain NLI data, not social norms datasets
+- May struggle with:
+  - culturally sensitive scenarios
+  - implicit or underspecified situations
+- The "context-dependent" label is heuristic (threshold-based), not learned
+
+---
+
+## Summary
+
+- ChatGPT → reasoning-driven, flexible, context-sensitive  
+- DeBERTa → classification-driven, consistent, probability-based  
+
+Together, they provide complementary perspectives on how models handle social acceptability under ambiguity.

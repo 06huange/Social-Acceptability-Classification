@@ -1,0 +1,18 @@
+===== GPT =====
+Accuracy: 0.5750
+
+Classification Report:
+                   precision    recall  f1-score   support
+
+       acceptable       0.50      0.74      0.60        23
+     unacceptable       0.00      0.00      0.00         0
+context-dependent       0.50      0.28      0.36        47
+
+        micro avg       0.50      0.43      0.46        70
+        macro avg       0.33      0.34      0.32        70
+     weighted avg       0.50      0.43      0.44        70
+
+Confusion Matrix:
+[[17  0  4]
+ [ 0  0  0]
+ [15  0 13]]
