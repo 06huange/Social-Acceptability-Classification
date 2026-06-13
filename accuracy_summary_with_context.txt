@@ -1,0 +1,2 @@
+DeBERTa Accuracy: 0.6250
+GPT Accuracy: 0.7917

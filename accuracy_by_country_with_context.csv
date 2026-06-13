@@ -1,0 +1,18 @@
+country,n_samples,deberta_accuracy,gpt_accuracy
+Brazil,4,0.25,0.5
+China,13,0.5384615384615384,0.8461538461538461
+Finland,1,1.0,1.0
+France,2,1.0,1.0
+Germany,12,0.6666666666666666,0.8333333333333334
+India,5,0.4,0.6
+Italy,2,0.5,1.0
+Japan,17,0.7647058823529411,0.8235294117647058
+Korea,3,1.0,1.0
+Mexico,1,1.0,0.0
+Netherlands,1,1.0,1.0
+South Korea,2,0.5,1.0
+Southern US,1,0.0,0.0
+Thailand,3,1.0,1.0
+UK,1,0.0,1.0
+US,51,0.5882352941176471,0.7647058823529411
+US urban,1,1.0,1.0
