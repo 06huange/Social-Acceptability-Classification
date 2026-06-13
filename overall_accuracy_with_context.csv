@@ -1,0 +1,3 @@
+model,accuracy
+DeBERTa,0.625
+GPT,0.7916666666666666

@@ -1,0 +1,121 @@
+id,situation,gold_label,prediction_label
+SAC001,I didn’t tell my parents I moved to another city.,acceptable,acceptable
+SAC002,I didn’t tell my parents I moved to another city.,context-dependent,context-dependent
+SAC003,I skipped a family dinner because I wanted alone time.,acceptable,acceptable
+SAC004,I skipped a family dinner because I wanted alone time.,context-dependent,context-dependent
+SAC005,I didn’t help my sibling financially.,context-dependent,acceptable
+SAC006,I didn’t help my sibling financially.,context-dependent,context-dependent
+SAC007,I criticized my parents in public.,not acceptable,not acceptable
+SAC008,I criticized my parents in public.,context-dependent,context-dependent
+SAC009,I told my aunt I did not want advice about marriage.,acceptable,acceptable
+SAC010,I told my aunt I did not want advice about marriage.,context-dependent,acceptable
+SAC011,I asked my coworker why she is still single.,not acceptable,not acceptable
+SAC012,I asked my coworker why she is still single.,context-dependent,not acceptable
+SAC013,I asked my friend about their dating life in front of others.,context-dependent,context-dependent
+SAC014,I asked my friend about their dating life in front of others.,not acceptable,not acceptable
+SAC015,I looked through my partner’s phone because I felt suspicious.,not acceptable,not acceptable
+SAC016,I looked through my partner’s phone because I felt suspicious.,not acceptable,not acceptable
+SAC017,I told my partner directly that their cooking was not good.,context-dependent,context-dependent
+SAC018,I told my partner directly that their cooking was not good.,not acceptable,not acceptable
+SAC019,I declined to meet my partner’s parents because I felt it was too soon.,acceptable,acceptable
+SAC020,I declined to meet my partner’s parents because I felt it was too soon.,context-dependent,context-dependent
+SAC021,I call my boss by their first name.,acceptable,acceptable
+SAC022,I call my boss by their first name.,not acceptable,not acceptable
+SAC023,I challenged my manager’s decision during a team meeting.,acceptable,acceptable
+SAC024,I challenged my manager’s decision during a team meeting.,not acceptable,not acceptable
+SAC025,I leave work exactly at 5pm when my tasks are done.,acceptable,acceptable
+SAC026,I leave work exactly at 5pm when my tasks are done.,context-dependent,not acceptable
+SAC027,I declined after-work drinks with my team.,acceptable,acceptable
+SAC028,I declined after-work drinks with my team.,context-dependent,not acceptable
+SAC029,I gave blunt negative feedback in a performance review.,context-dependent,not acceptable
+SAC030,I gave blunt negative feedback in a performance review.,not acceptable,not acceptable
+SAC031,I did not reply to a non-urgent work email until the next day.,acceptable,acceptable
+SAC032,I did not reply to a non-urgent work email until the next day.,context-dependent,acceptable
+SAC033,I reported a coworker’s mistake to management without talking to them first.,context-dependent,not acceptable
+SAC034,I reported a coworker’s mistake to management without talking to them first.,not acceptable,not acceptable
+SAC035,I interrupted someone during a brainstorming meeting.,context-dependent,context-dependent
+SAC036,I interrupted someone during a brainstorming meeting.,not acceptable,not acceptable
+SAC037,I told my friend their essay was weak and needed major changes.,context-dependent,not acceptable
+SAC038,I told my friend their essay was weak and needed major changes.,not acceptable,not acceptable
+SAC039,I hung up the phone because I was frustrated.,not acceptable,not acceptable
+SAC040,I hung up the phone because I was frustrated.,context-dependent,not acceptable
+SAC041,I did not make eye contact while speaking to an older person.,context-dependent,context-dependent
+SAC042,I did not make eye contact while speaking to an older person.,acceptable,acceptable
+SAC043,I used very formal language with someone my age.,acceptable,acceptable
+SAC044,I used very formal language with someone my age.,context-dependent,not acceptable
+SAC045,I gave a short answer instead of explaining my feelings.,context-dependent,context-dependent
+SAC046,I gave a short answer instead of explaining my feelings.,acceptable,acceptable
+SAC047,I did not greet strangers on the street.,acceptable,acceptable
+SAC048,I did not greet strangers on the street.,context-dependent,not acceptable
+SAC049,I asked someone their age directly.,not acceptable,not acceptable
+SAC050,I asked someone their age directly.,context-dependent,context-dependent
+SAC051,I told someone they gained weight.,not acceptable,not acceptable
+SAC052,I told someone they gained weight.,context-dependent,not acceptable
+SAC053,I split the restaurant bill exactly.,acceptable,acceptable
+SAC054,I split the restaurant bill exactly.,context-dependent,context-dependent
+SAC055,I arrived ten minutes late to dinner with friends.,not acceptable,not acceptable
+SAC056,I arrived ten minutes late to dinner with friends.,context-dependent,acceptable
+SAC057,I checked my phone while someone was talking to me.,not acceptable,not acceptable
+SAC058,I checked my phone while someone was talking to me.,context-dependent,context-dependent
+SAC059,I gave a very expensive gift to a new acquaintance.,context-dependent,context-dependent
+SAC060,I gave a very expensive gift to a new acquaintance.,not acceptable,not acceptable
+SAC061,I kept some details of my vacation private from friends.,acceptable,acceptable
+SAC062,I kept some details of my vacation private from friends.,context-dependent,context-dependent
+SAC063,I did not tell people I was traveling out of state.,acceptable,acceptable
+SAC064,I did not tell people I was traveling out of state.,context-dependent,context-dependent
+SAC065,I refused to share my phone password with my partner.,acceptable,acceptable
+SAC066,I refused to share my phone password with my partner.,context-dependent,acceptable
+SAC067,I asked my roommate not to post photos of me online.,acceptable,acceptable
+SAC068,I asked my roommate not to post photos of me online.,acceptable,acceptable
+SAC069,I pulled out of a group project at the last minute.,not acceptable,not acceptable
+SAC070,I pulled out of a group project at the last minute.,not acceptable,not acceptable
+SAC071,I refused to refund a sale after we had already agreed on the terms.,context-dependent,not acceptable
+SAC072,I refused to refund a sale after we had already agreed on the terms.,acceptable,not acceptable
+SAC073,I apologized years after hurting someone.,acceptable,acceptable
+SAC074,I apologized years after hurting someone.,acceptable,acceptable
+SAC075,I kept quiet after learning someone cheated on their partner.,context-dependent,context-dependent
+SAC076,I didn’t delete an embarrassing photo of my friend when they asked.,not acceptable,not acceptable
+SAC077,I didn’t delete an embarrassing photo of my friend when they asked.,not acceptable,not acceptable
+SAC078,I canceled on my friend last minute because I felt tired.,context-dependent,context-dependent
+SAC079,I canceled on my friend last minute because I felt tired.,not acceptable,not acceptable
+SAC080,I told my friend I didn’t like their gift.,context-dependent,not acceptable
+SAC081,I told my friend I didn’t like their gift.,not acceptable,not acceptable
+SAC082,I ignored my friend’s messages for days.,context-dependent,not acceptable
+SAC083,I ignored my friend’s messages for days.,not acceptable,not acceptable
+SAC084,I didn’t support my friend during a difficult time.,not acceptable,not acceptable
+SAC085,I didn’t support my friend during a difficult time.,not acceptable,not acceptable
+SAC086,I distanced myself from a friend who was constantly negative.,acceptable,acceptable
+SAC087,I distanced myself from a friend who was constantly negative.,context-dependent,acceptable
+SAC088,I argued with my teacher in class.,context-dependent,acceptable
+SAC089,I argued with my teacher in class.,not acceptable,not acceptable
+SAC090,I questioned my professor’s grading publicly.,context-dependent,not acceptable
+SAC091,I questioned my professor’s grading publicly.,not acceptable,not acceptable
+SAC092,I made a joke that embarrassed my friend.,not acceptable,not acceptable
+SAC093,I made a joke that embarrassed my friend.,context-dependent,context-dependent
+SAC094,I told someone they were being annoying.,context-dependent,context-dependent
+SAC095,I told someone they were being annoying.,not acceptable,not acceptable
+SAC096,I didn’t inform my team before taking leave.,not acceptable,not acceptable
+SAC097,I didn’t inform my team before taking leave.,not acceptable,not acceptable
+SAC098,I worked independently without updating my team.,context-dependent,not acceptable
+SAC099,I worked independently without updating my team.,not acceptable,not acceptable
+SAC100,I kept extra change that was given to me by mistake.,not acceptable,not acceptable
+SAC101,I kept extra change that was given to me by mistake.,not acceptable,not acceptable
+SAC102,I didn’t return something I borrowed.,not acceptable,not acceptable
+SAC103,I didn’t return something I borrowed.,not acceptable,not acceptable
+SAC104,I didn’t say thank you after receiving help.,not acceptable,not acceptable
+SAC105,I didn’t say thank you after receiving help.,not acceptable,not acceptable
+SAC106,I declined a gift.,context-dependent,acceptable
+SAC107,I declined a gift.,not acceptable,not acceptable
+SAC108,I showed up empty-handed to a dinner invitation.,context-dependent,context-dependent
+SAC109,I showed up empty-handed to a dinner invitation.,not acceptable,not acceptable
+SAC110,I shared my friend’s personal story without asking.,not acceptable,not acceptable
+SAC111,I shared my friend’s personal story without asking.,not acceptable,not acceptable
+SAC112,I posted a group photo without asking others.,context-dependent,context-dependent
+SAC113,I posted a group photo without asking others.,not acceptable,not acceptable
+SAC114,I didn’t follow through on a promise I made.,not acceptable,not acceptable
+SAC115,I didn’t follow through on a promise I made.,not acceptable,not acceptable
+SAC116,I changed my mind about a commitment after agreeing.,context-dependent,acceptable
+SAC117,I changed my mind about a commitment after agreeing.,not acceptable,not acceptable
+SAC118,I ignored someone asking for help.,context-dependent,context-dependent
+SAC119,I ignored someone asking for help.,not acceptable,not acceptable
+SAC120,I made fun of someone in public.,not acceptable,not acceptable
