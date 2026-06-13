@@ -1,0 +1,43 @@
+Experiment: GPT-4o mini scenario + context + RAG v2 + 1-10 acceptability rating
+
+Implemented change
+------------------
+This run used the same culture-aware RAG v2 database and the same retrieval inputs as the previous
+context + RAG v2 experiment:
+
+- situation
+- culture column
+- cultural_context column
+- top 5 retrieved chunks from experiments/gpt_rag_dataset/results/rag_database_v2/culture_aware_rag_v2.jsonl
+
+The prompt was changed from direct 3-way classification to scalar acceptability rating.
+GPT-4o mini was asked to output JSON with:
+
+- score: 1-10
+- label: acceptable / not acceptable / context-dependent
+- reason
+
+The label was mapped using:
+
+- 1-3 = not acceptable
+- 4-7 = context-dependent
+- 8-10 = acceptable
+
+Overall result
+--------------
+Total rows: 120
+Correct: 105
+Accuracy: 87.50%
+
+Interpretation
+--------------
+The rating prompt performed much better than the hard-label and decomposition prompts. The likely
+reason is that a scalar score lets the model represent borderline social acceptability without
+immediately overcommitting to either a firm binary label or universal context-dependence.
+
+Output files
+------------
+- gpt4o_mini_scenario_context_rag_v2_rating_trace.jsonl
+- CS263_dataset_with_predictions_gpt_scenario_context_rag_v2_rating.csv
+- CS263_dataset_with_predictions_gpt_scenario_context_rag_v2_rating_with_scores.csv
+- gpt4o_mini_scenario_context_rag_v2_rating_metrics.json

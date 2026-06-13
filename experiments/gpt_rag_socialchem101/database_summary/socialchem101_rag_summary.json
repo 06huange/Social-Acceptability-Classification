@@ -1,0 +1,69 @@
+{
+  "chunk_count": 285514,
+  "source": "Social-Chem-101",
+  "source_license": "CC BY-SA 4.0",
+  "source_url": "https://github.com/mbforbes/social-chemistry-101",
+  "source_data_url": "https://storage.googleapis.com/ai2-mosaic-public/projects/social-chemistry/data/social-chem-101.zip",
+  "chunk_type_counts": {
+    "socialchem101_rot": 285514
+  },
+  "source_area_counts": {
+    "confessions": 90885,
+    "rocstories": 84483,
+    "amitheasshole": 75376,
+    "dearabby": 34770
+  },
+  "source_split_counts": {
+    "train": 228160,
+    "test": 28685,
+    "dev": 28622,
+    "none": 47
+  },
+  "acceptability_signal_counts": {
+    "not acceptable": 73832,
+    "acceptable": 52799,
+    "acceptable but discretionary": 48318,
+    "acceptable or expected": 43886,
+    "unknown": 30935,
+    "context-dependent or contested": 19205,
+    "strongly not acceptable": 13219,
+    "strongly acceptable": 3320
+  },
+  "project_category_hint_counts": {
+    "care_harm": 152184,
+    "relationship": 82626,
+    "family": 66033,
+    "morality_fairness": 61484,
+    "morality_loyalty": 55769,
+    "social_etiquette": 51685,
+    "friendship": 48922,
+    "communication": 40828,
+    "authority": 35089,
+    "workplace": 21237,
+    "privacy": 12426,
+    "fairness": 10005,
+    "commitment": 6009
+  },
+  "norm_family_counts": {
+    "care_harm": 141734,
+    "fairness": 56729,
+    "loyalty": 54929,
+    "family_obligation": 39378,
+    "general_social_norm": 38172,
+    "hierarchy": 35606,
+    "punctuality": 25634,
+    "reciprocity": 24826,
+    "social_etiquette": 21274,
+    "directness": 17485,
+    "privacy": 9302,
+    "commitment": 6415,
+    "face_reputation": 3874
+  },
+  "notes": [
+    "Rows with rot-bad=1, empty rules of thumb, or empty actions were excluded.",
+    "Multiple annotation rows for the same rot-id were aggregated into a single RAG chunk.",
+    "Social-Chem-101 is used as broad social-norm evidence, not as country-specific cultural evidence.",
+    "The corpus does not include labels or predictions from the CS263 project dataset."
+  ],
+  "project_matched_chunk_count": 265743
+}

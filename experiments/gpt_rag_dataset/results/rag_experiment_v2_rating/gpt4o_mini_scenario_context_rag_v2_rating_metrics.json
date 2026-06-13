@@ -1,0 +1,11 @@
+{
+  "model": "gpt-4o-mini",
+  "setup": "scenario + culture + cultural_context + retrieved norms + 1-10 acceptability rating prompt",
+  "prediction_column": "gpt_scenario_context_rag_v2_rating",
+  "top_k": 5,
+  "total": 120,
+  "correct": 105,
+  "accuracy": 0.875,
+  "trace_path": "experiments/gpt_rag_dataset/results/rag_experiment_v2_rating/gpt4o_mini_scenario_context_rag_v2_rating_trace.jsonl",
+  "augmented_dataset_path": "experiments/gpt_rag_dataset/results/rag_experiment_v2_rating/CS263_dataset_with_predictions_gpt_scenario_context_rag_v2_rating.csv"
+}

@@ -1,0 +1,47 @@
+{
+  "chunk_count": 196,
+  "chunk_type_counts": {
+    "contrastive_scenario_pattern": 59,
+    "country_norm": 120,
+    "country_profile": 17
+  },
+  "culture_region_counts": {
+    "US": 52,
+    "Japan": 18,
+    "China": 14,
+    "Germany": 13,
+    "India": 6,
+    "Brazil": 5,
+    "Korea": 4,
+    "Thailand": 4,
+    "France": 3,
+    "Italy": 3,
+    "South Korea": 3,
+    "Finland": 2,
+    "Mexico": 2,
+    "Netherlands": 2,
+    "Southern US": 2,
+    "UK": 2,
+    "US urban": 2
+  },
+  "category_counts": {
+    "social_etiquette": 20,
+    "workplace": 20,
+    "privacy": 12,
+    "communication": 10,
+    "family": 10,
+    "relationship": 10,
+    "friendship": 8,
+    "care_harm": 7,
+    "morality_fairness": 7,
+    "authority": 4,
+    "commitment": 4,
+    "fairness": 4,
+    "morality_loyalty": 4
+  },
+  "leakage_policy": [
+    "No gold labels, model predictions, confidence scores, or exact situation text are included.",
+    "Scenario patterns are generalized from recurring situation types to support retrieval without direct answer lookup.",
+    "Decision fields are country/domain-specific and vary by norm family."
+  ]
+}

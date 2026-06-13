@@ -1,0 +1,55 @@
+{
+  "model": "gpt-4o",
+  "setup": "scenario + culture column + cultural_context column + Social-Chem-101 RAG + exposed RAG intermediate findings",
+  "prediction_column": "gpt4o_socialchem101_rag_reasoning",
+  "top_k": 8,
+  "total": 120,
+  "correct": 107,
+  "accuracy": 0.8916666666666667,
+  "by_gold_label": {
+    "acceptable": {
+      "correct": 19,
+      "total": 23,
+      "accuracy": 0.8260869565217391
+    },
+    "context-dependent": {
+      "correct": 40,
+      "total": 47,
+      "accuracy": 0.851063829787234
+    },
+    "not acceptable": {
+      "correct": 48,
+      "total": 50,
+      "accuracy": 0.96
+    }
+  },
+  "confusion_matrix_gold_to_predicted": {
+    "acceptable": {
+      "acceptable": 19,
+      "context-dependent": 1,
+      "not acceptable": 3
+    },
+    "context-dependent": {
+      "acceptable": 3,
+      "context-dependent": 40,
+      "not acceptable": 4
+    },
+    "not acceptable": {
+      "acceptable": 0,
+      "context-dependent": 2,
+      "not acceptable": 48
+    }
+  },
+  "rag_relevance_counts": {
+    "high": 51,
+    "medium": 56,
+    "low": 13
+  },
+  "decision_confidence_counts": {
+    "high": 76,
+    "medium": 44
+  },
+  "trace_path": "experiments/gpt_rag_socialchem101/results/rag_experiment_socialchem101_reasoning_gpt4o/gpt4o_socialchem101_rag_reasoning_trace.jsonl",
+  "augmented_dataset_path": "experiments/gpt_rag_socialchem101/results/rag_experiment_socialchem101_reasoning_gpt4o/CS263_dataset_with_predictions_gpt4o_socialchem101_rag_reasoning.csv",
+  "findings_path": "experiments/gpt_rag_socialchem101/results/rag_experiment_socialchem101_reasoning_gpt4o/gpt4o_socialchem101_rag_reasoning_rag_findings.csv"
+}

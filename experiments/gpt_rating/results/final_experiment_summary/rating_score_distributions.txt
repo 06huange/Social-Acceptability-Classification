@@ -1,0 +1,6 @@
+Score distributions by setup:
+scenario_only: labels={'context-dependent': 115, 'acceptable': 1, 'not acceptable': 4}, scores={'3': 4, '4': 5, '5': 107, '7': 3, '8': 1}
+scenario_context: labels={'context-dependent': 66, 'not acceptable': 39, 'acceptable': 15}, scores={'2': 6, '3': 33, '4': 15, '5': 20, '6': 21, '7': 10, '8': 13, '9': 2}
+scenario_rag_v1: labels={'context-dependent': 77, 'not acceptable': 23, 'acceptable': 20}, scores={'10': 2, '2': 7, '3': 16, '4': 25, '5': 45, '6': 5, '7': 2, '8': 17, '9': 1}
+scenario_context_rag_v1: labels={'acceptable': 23, 'context-dependent': 49, 'not acceptable': 48}, scores={'10': 3, '2': 16, '3': 32, '4': 11, '5': 24, '6': 10, '7': 4, '8': 17, '9': 3}
+scenario_context_rag_v2: labels={'acceptable': 20, 'not acceptable': 41, 'context-dependent': 59}, scores={'10': 3, '2': 5, '3': 36, '4': 9, '5': 38, '6': 7, '7': 5, '8': 17}

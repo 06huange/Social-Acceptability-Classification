@@ -1,0 +1,42 @@
+{
+  "chunk_count": 120,
+  "category_counts": {
+    "social_etiquette": 20,
+    "workplace": 20,
+    "privacy": 12,
+    "communication": 10,
+    "family": 10,
+    "relationship": 10,
+    "friendship": 8,
+    "care_harm": 7,
+    "morality_fairness": 7,
+    "authority": 4,
+    "commitment": 4,
+    "fairness": 4,
+    "morality_loyalty": 4
+  },
+  "culture_region_counts": {
+    "US": 51,
+    "Japan": 17,
+    "China": 13,
+    "Germany": 12,
+    "India": 5,
+    "Brazil": 4,
+    "Korea": 3,
+    "Thailand": 3,
+    "France": 2,
+    "Italy": 2,
+    "South Korea": 2,
+    "Finland": 1,
+    "Mexico": 1,
+    "Netherlands": 1,
+    "Southern US": 1,
+    "UK": 1,
+    "US urban": 1
+  },
+  "notes": [
+    "rag_norm_database_no_leak.jsonl excludes labels, model predictions, confidence scores, and exact situations.",
+    "rag_norm_database_with_examples.jsonl adds example_situation for audit/debugging; avoid using it for final test evaluation.",
+    "Each chunk is derived from the dataset's cultural_context field and generalized with latent-variable retrieval fields."
+  ]
+}

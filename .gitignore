@@ -1,0 +1,17 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+.env
+.venv/
+.venv-*/
+venv/
+
+# External or generated heavyweight artifacts.
+/data/socialchem101/
+/outputs/
+/experiments/gpt_rag_socialchem101/database_local/
+
+# Local scratch files.
+/local_artifacts/
