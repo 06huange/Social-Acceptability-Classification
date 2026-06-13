@@ -14,7 +14,7 @@ The project studies whether models adapt their judgments when the same behavior 
 data/
   raw/                         Original 120-row project dataset
   processed/                   Dataset with baseline prediction columns
-docs/report/                   ACL-style report drafts and LaTeX source
+docs/report/                   Final report PDF
 experiments/
   gpt_baselines/               Pure GPT/DeBERTa baselines and context-appended baseline
   gpt_prompt_engineering/       GPT/DeBERTa prompt-engineering notebooks and outputs
