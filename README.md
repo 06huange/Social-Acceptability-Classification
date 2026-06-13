@@ -136,16 +136,3 @@ Existing Llama and LFM2 prediction outputs are stored in:
 experiments/llama/results/
 experiments/lfm2/results/
 ```
-
-## For Teammates
-
-Add model-specific code directly under `experiments/<model_name>/`. Each experiment folder should include a short README, scripts, and results. Suggested pattern:
-
-```text
-experiments/llama3/
-  README.md
-  scripts/
-  results/
-```
-
-Please keep heavyweight checkpoints, virtual environments, cache directories, and raw external corpora out of Git.
