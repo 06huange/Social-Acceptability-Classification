@@ -17,9 +17,13 @@ data/
 docs/report/                   ACL-style report drafts and LaTeX source
 experiments/
   gpt_baselines/               Pure GPT/DeBERTa baselines and context-appended baseline
+  gpt_prompt_engineering/       GPT/DeBERTa prompt-engineering notebooks and outputs
   gpt_rating/                  1-10 rating prompt experiments and summary tables
   gpt_rag_dataset/             Dataset-derived RAG databases, scripts, and runs
   gpt_rag_socialchem101/       Social-Chem-101 RAG reasoning experiment
+  qwen/                        Qwen3-8B thinking experiments
+  llama/                       Llama prediction outputs
+  lfm2/                        LFM2 prediction outputs
   <model_or_method_name>/       Add new teammate experiments here
 ```
 
@@ -51,12 +55,30 @@ pip install -r requirements.txt
 
 Set `OPENAI_API_KEY` before running GPT experiments.
 
+The Qwen MLX experiment requires an Apple Silicon environment with `mlx-lm` installed.
+
 ## Running Experiments
 
 Pure/context baseline:
 
 ```bash
 python experiments/gpt_baselines/scripts/run_context_appended_baselines.py --models gpt
+```
+
+Run both GPT and DeBERTa context-appended baselines:
+
+```bash
+python experiments/gpt_baselines/scripts/run_context_appended_baselines.py \
+  --models gpt deberta
+```
+
+The related notebooks are in `experiments/gpt_baselines/notebooks/`.
+
+GPT/DeBERTa prompt-engineering notebooks:
+
+```text
+experiments/gpt_prompt_engineering/gpt_prompt_engineering.ipynb
+experiments/gpt_prompt_engineering/263_Project_WithPromptEngineering.ipynb
 ```
 
 Dataset-derived RAG:
@@ -76,11 +98,43 @@ python experiments/gpt_rag_dataset/scripts/run_gpt4o_mini_rag.py \
   --out-dir experiments/gpt_rating/results/rating_baselines/scenario_context
 ```
 
+Dataset-derived RAG with rating:
+
+```bash
+python experiments/gpt_rag_dataset/scripts/run_gpt4o_mini_rag.py \
+  --include-context \
+  --rating-prompt \
+  --rag-db experiments/gpt_rag_dataset/results/rag_database/rag_norm_database_no_leak.jsonl \
+  --out-dir experiments/gpt_rating/results/rating_baselines/scenario_context_rag_v1
+```
+
 Social-Chem-101 RAG uses an ignored local database path:
 
 ```bash
 python experiments/gpt_rag_socialchem101/scripts/build_socialchem101_rag_database.py
 python experiments/gpt_rag_socialchem101/scripts/run_gpt4o_socialchem101_rag_reasoning.py
+```
+
+Qwen3-8B thinking experiment with MLX:
+
+```bash
+python experiments/qwen/scripts/qwen_thinking_eval.py \
+  --dataset data/raw/CS263_dataset.csv \
+  --out-dir experiments/qwen/results \
+  --mode both
+```
+
+For a quick smoke test:
+
+```bash
+python experiments/qwen/scripts/qwen_thinking_eval.py --limit 3 --mode basic
+```
+
+Existing Llama and LFM2 prediction outputs are stored in:
+
+```text
+experiments/llama/results/
+experiments/lfm2/results/
 ```
 
 ## For Teammates
